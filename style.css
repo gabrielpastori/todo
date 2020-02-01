@@ -1,19 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
-*{
-    font-family: 'Lora',sans-serif;
-}
+
 body{
-    background-color: hsla(149, 0%, 62%, 1);
+    background-image: linear-gradient(45deg, #323332 25%, #3b3b3b 25%, #3b3b3b 50%, #323332 50%, #323332 75%, #3b3b3b 75%, #3b3b3b 100%);
+    background-size:38px 38px;
+    font-family: 'Shadows Into Light',sans-serif;
 }
+
 h1{
     text-align: center;
     color:white;
+    font-size:3em;
 }
 #input{
     margin-top: 7vh;
     text-align: center;
 }
-ul{
-    width:40%;
+input{
+    font-family: 'Zilla Slab', sans-serif;;
+    font-size:1.2em;
+    border-radius:10px;
+    height: 30px;
+    width:200px;
+}
+button{
+    font-family: 'Shadows Into Light',sans-serif;
+    border-radius:5px;
+    height: 30px;
+    width:60px;
+    color:white;
+    background-color:hsla(97, 0%, 10%, 1);
+}
+button:hover{
+    background-color:hsla(97, 0%, 23%, 1);
+}
+#list{
+    font-size:1.2em;
+    width:70%;
     margin:auto;
+    margin-top:30px;
+    padding-top:2px;
+    border-style:solid;
+    border-width:1px;
+    border-color: hsla(229, 0%, 53%, 1);
+    border-radius:25px;
+    background-color:white;
+}
+ul{
+    font-family: 'Lora',sans-serif;
+    list-style: circle;
+    width:70%;
+    margin:auto;
+    margin-top:20px!important;
+    margin-bottom:20px!important
+}
+ul li{
+    font-family: 'Lora',sans-serif!important;
+
+}
+@media(max-device-width:650px){
+    h1{
+        font-size:5em;
+    }
+    input{
+        height:40px;
+        width:300px;
+    }
+    button{
+        height: 40px;
+        width:50px;
+    }
+    #list{
+        font-size:1.8em;
+    }
+    .Complete,.Delete{
+        width:26px!important;
+        height: 26px!important;
+    }
 }

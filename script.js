@@ -1,5 +1,4 @@
 var ul = document.querySelector("ul");
-ul.style.marginTop="10vh";
 var bt = document.querySelector("#insertbt");
 var ok=1;
 var id=0;
@@ -13,8 +12,8 @@ if(localStorage.getItem('list')!=null) {
 function createButton(src,hint,bt){
     bt.type="image";
     bt.src=src;
-    bt.style.width="13px";
-    bt.style.height="13px";
+    bt.style.width="16px";
+    bt.style.height="16px";
     bt.title=hint;
     bt.style.marginLeft="12px";
     return bt;
@@ -23,9 +22,6 @@ function updateClass(){
     var lis=document.querySelectorAll('li');
     for(var i=0;i<lis.length;i++){
         lis[i].classList=i;
-        
-        
-        
     }
 }
 function deleteF(classV){
